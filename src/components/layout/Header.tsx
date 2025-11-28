@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 import { Navigation } from './Navigation'
 import { MobileMenu } from './MobileMenu'
-import { SITE_NAME } from '@/lib/constants'
+import { SITE_NAME, SITE_NAME_ZH } from '@/lib/constants'
 import { Menu, X } from 'lucide-react'
 
 /**
@@ -21,12 +21,19 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 text-xl font-bold text-primary-600 md:text-2xl"
+            className="flex items-center space-x-3"
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-600 text-white md:h-10 md:w-10">
-              <span className="text-lg font-bold md:text-xl">B</span>
+            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-600 text-white md:h-12 md:w-12">
+              <span className="text-lg font-bold md:text-xl">900</span>
             </div>
-            <span>{SITE_NAME}</span>
+            <div className="flex flex-col">
+              <span className="text-xs font-semibold leading-tight text-gray-900 md:text-sm">
+                {SITE_NAME_ZH}
+              </span>
+              <span className="text-xs font-bold leading-tight text-primary-600 md:text-sm">
+                {SITE_NAME}
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

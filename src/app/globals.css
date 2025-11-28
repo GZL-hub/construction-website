@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 @layer base {
   :root {
-    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    /* use the imported fonts as the root variable used by Tailwind config */
+    --font-inter: 'Plus Jakarta Sans', 'Open Sans', 'Noto Sans', 'Ysabeau Office', system-ui, -apple-system, sans-serif;
+    /* Traditional Mandarin */
+    --font-zh: 'Noto Sans TC', 'Noto Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
   body {

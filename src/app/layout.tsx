@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants'
+import { SITE_NAME, SITE_NAME_ZH, SITE_DESCRIPTION } from '@/lib/constants'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
   ),
   title: {
-    default: `${SITE_NAME} - Commercial & Residential Construction`,
+    default: `${SITE_NAME} | ${SITE_NAME_ZH} - Commercial & Residential Construction`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
