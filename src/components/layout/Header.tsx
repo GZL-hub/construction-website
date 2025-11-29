@@ -23,14 +23,14 @@ export function Header() {
             href="/"
             className="flex items-center space-x-3"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-600 text-white md:h-12 md:w-12">
+            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-800 text-white md:h-12 md:w-12">
               <span className="text-lg font-bold md:text-xl">900</span>
             </div>
             <div className="flex flex-col">
               <span className="text-xs font-semibold leading-tight text-gray-900 md:text-sm">
                 {SITE_NAME_ZH}
               </span>
-              <span className="text-xs font-bold leading-tight text-primary-600 md:text-sm">
+              <span className="text-xs font-bold leading-tight text-primary-800 md:text-sm">
                 {SITE_NAME}
               </span>
             </div>
@@ -44,7 +44,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="md:hidden"
+            className="rounded-lg p-2 text-gray-800 transition-colors hover:bg-gray-100 hover:text-primary-700 md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >

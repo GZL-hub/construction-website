@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 import {
   SITE_NAME,
+  SITE_NAME_ZH,
   NAV_LINKS,
   CONTACT_INFO,
   SOCIAL_LINKS,
@@ -20,14 +21,24 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <div className="mb-4 flex items-center space-x-2 text-xl font-bold text-primary-600">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-600 text-white">
-                <span className="text-lg font-bold">B</span>
+            <Link
+              href="/"
+              className="mb-4 flex items-center space-x-3"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-800 text-white">
+                <span className="text-lg font-bold">900</span>
               </div>
-              <span>{SITE_NAME}</span>
-            </div>
-            <p className="text-sm text-gray-600">
-              Leading construction company delivering quality projects on time
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold leading-tight text-gray-900">
+                  {SITE_NAME_ZH}
+                </span>
+                <span className="text-xs font-bold leading-tight text-primary-800">
+                  {SITE_NAME}
+                </span>
+              </div>
+            </Link>
+            <p className="text-sm text-gray-700">
+              Leading water treatment solutions delivering quality projects on time
               and within budget.
             </p>
           </div>
@@ -42,7 +53,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 transition-colors hover:text-primary-600"
+                    className="text-sm text-gray-700 transition-colors hover:text-primary-700"
                   >
                     {link.label}
                   </Link>
@@ -57,25 +68,25 @@ export function Footer() {
               Contact
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-sm text-gray-600">
+              <li className="flex items-start gap-2 text-sm text-gray-700">
                 <Phone className="mt-0.5 h-4 w-4 flex-shrink-0" />
                 <a
                   href={`tel:${CONTACT_INFO.phone}`}
-                  className="hover:text-primary-600"
+                  className="hover:text-primary-700"
                 >
                   {CONTACT_INFO.phone}
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-gray-600">
+              <li className="flex items-start gap-2 text-sm text-gray-700">
                 <Mail className="mt-0.5 h-4 w-4 flex-shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
-                  className="hover:text-primary-600"
+                  className="hover:text-primary-700"
                 >
                   {CONTACT_INFO.email}
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-gray-600">
+              <li className="flex items-start gap-2 text-sm text-gray-700">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
                 <span>{CONTACT_INFO.address}</span>
               </li>
@@ -90,21 +101,21 @@ export function Footer() {
             <div className="flex gap-4">
               <a
                 href={SOCIAL_LINKS.facebook}
-                className="text-gray-600 transition-colors hover:text-primary-600"
+                className="text-gray-700 transition-colors hover:text-primary-700"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href={SOCIAL_LINKS.linkedin}
-                className="text-gray-600 transition-colors hover:text-primary-600"
+                className="text-gray-700 transition-colors hover:text-primary-700"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href={SOCIAL_LINKS.instagram}
-                className="text-gray-600 transition-colors hover:text-primary-600"
+                className="text-gray-700 transition-colors hover:text-primary-700"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
@@ -114,9 +125,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600">
+        <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-700">
           <p>
-            &copy; {currentYear} {SITE_NAME}. All rights reserved.
+            &copy; {currentYear} {SITE_NAME} © 415984-T.
           </p>
         </div>
       </Container>
