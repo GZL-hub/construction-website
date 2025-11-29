@@ -26,13 +26,13 @@ export function Footer() {
               className="mb-4 flex items-center space-x-3"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-800 text-white">
-                <span className="text-lg font-bold">900</span>
+                <span className="font-oswald font-bold text-lg">900</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold leading-tight text-gray-900">
+              <div className="flex flex-col gap-1">
+                <span className="font-zh text-xs font-bold tracking-wide text-primary-800">
                   {SITE_NAME_ZH}
                 </span>
-                <span className="text-xs font-bold leading-tight text-primary-800">
+                <span className="text-xs font-bold uppercase leading-tight text-black">
                   {SITE_NAME}
                 </span>
               </div>

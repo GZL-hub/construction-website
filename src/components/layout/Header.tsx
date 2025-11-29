@@ -24,13 +24,13 @@ export function Header() {
             className="flex items-center space-x-3"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary-800 text-white md:h-12 md:w-12">
-              <span className="text-lg font-bold md:text-xl">900</span>
+              <span className="font-oswald font-bold text-lg md:text-xl">900</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-semibold leading-tight text-gray-900 md:text-sm">
+            <div className="flex flex-col gap-1">
+              <span className="font-zh text-xs font-bold tracking-widest text-primary-800 md:text-sm">
                 {SITE_NAME_ZH}
               </span>
-              <span className="text-xs font-bold leading-tight text-primary-800 md:text-sm">
+              <span className="text-xs font-bold uppercase leading-tight text-black md:text-sm">
                 {SITE_NAME}
               </span>
             </div>

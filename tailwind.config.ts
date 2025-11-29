@@ -50,7 +50,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        zh: ['var(--font-zh)', 'system-ui', 'sans-serif'],
+        zh: ['var(--font-noto-serif-tc)', 'system-ui', 'sans-serif'],
+        oswald: ['var(--font-oswald)', 'sans-serif'],
       },
     },
   },

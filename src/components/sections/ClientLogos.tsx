@@ -8,7 +8,7 @@ const clients = [
   { name: 'Indah Water', logo: '/images/client_logo/indahwater.svg' },
   { name: 'MKH', logo: '/images/client_logo/mkh.svg' },
   { name: 'SP Setia', logo: '/images/client_logo/setia.svg' },
-  { name: 'SPAN', logo: '/images/client_logo/span.svg' },
+  { name: 'UEM Sunrise', logo: '/images/client_logo/uemsunrise.svg' },
   { name: 'Sunway Group', logo: '/images/client_logo/sunwaygroup.svg' },
   { name: 'Titi Jaya', logo: '/images/client_logo/titijaya.svg' },
 ]

@@ -1,13 +1,13 @@
 export const SITE_NAME = 'Nine Hundred Builders SDN BHD'
-export const SITE_NAME_ZH = '皓发建筑私人有银公式'
+export const SITE_NAME_ZH = '皓發建築私人有限公司'
 export const SITE_TAGLINE = 'Building Trust, Delivering Quality'
 export const SITE_DESCRIPTION =
   'A dedicated SME construction partner specialising in sewage treatment plants, infrastructure works, and general building projects. We work closely with clients to provide reliable, efficient, and professional solutions.'
 
 export const CONTACT_INFO = {
-  phone: '(555) 123-4567',
-  email: 'info@900builders.com',
-  address: '123 Construction Ave, Building City, BC 12345',
+  phone: '+603-8944 9900',
+  email: 'gkp900@hotmail.com',
+  address: 'No. 144, Jalan PUJ 3/8, Taman Puncak Jalil, Pusat Bandar Putra Permai, 43300 Seri Kembangan, Selangor',
 }
 
 export const SOCIAL_LINKS = {
