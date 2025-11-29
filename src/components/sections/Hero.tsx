@@ -41,9 +41,9 @@ export function Hero() {
             <Container>
               <div className="flex flex-col justify-center lg:pr-8">
                 {/* Tagline/Headline */}
-                <h1 className="mb-6 text-white leading-tight">
+                <h2 className="mb-6 text-white leading-tight">
                   {SITE_TAGLINE}
-                </h1>
+                </h2>
 
                 {/* Description */}
                 <p className="mb-8 text-lg leading-relaxed text-gray-300 text-justify md:text-xl">
@@ -108,34 +108,46 @@ export function Hero() {
               {/* CIDB G-7 Badge - Pure Solid Blue */}
               <div className="group bg-primary-700 border-r border-primary-600 px-6 py-8 hover:bg-primary-600 transition-all duration-300">
                 <div className="flex flex-col items-center justify-center text-center">
-                  <div className="mb-3 flex h-12 w-12 items-center justify-center bg-white/30 border border-white/50">
-                    <Shield className="h-6 w-6 text-white" />
+                  <div className="mb-3 flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                    <Image
+                      src="/images/cert_logo/CIDB_logo.svg"
+                      alt="CIDB Logo"
+                      width={64}
+                      height={64}
+                      className="object-contain brightness-0 invert"
+                    />
                   </div>
-                  <div className="text-3xl font-bold text-white">CIDB G-7</div>
-                  <div className="text-sm font-medium text-white">Certified</div>
+                  <div className="text-3xl font-bold text-white transform transition-all duration-300 group-hover:scale-105">CIDB G-7</div>
+                  <div className="text-sm font-medium text-white opacity-90 transition-opacity duration-300 group-hover:opacity-100">Certified</div>
                 </div>
               </div>
 
               {/* ISO Certified Badge - Glass UI */}
               <div className="group relative backdrop-blur-md bg-white/10 px-6 py-8 hover:bg-white/15 transition-all duration-300">
                 <div className="flex flex-col items-center justify-center text-center">
-                  <div className="mb-3 flex h-12 w-12 items-center justify-center bg-blue-500/20 border border-blue-400/30">
-                    <CheckCircle2 className="h-6 w-6 text-blue-300" />
+                  <div className="mb-3 flex h-16 w-16 items-center justify-center transform transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
+                    <Image
+                      src="/images/cert_logo/ISO9001.svg"
+                      alt="ISO 9001:2015 Certified"
+                      width={64}
+                      height={64}
+                      className="object-contain brightness-0 invert opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+                    />
                   </div>
-                  <div className="text-3xl font-bold text-white">ISO</div>
-                  <div className="text-sm font-medium text-gray-300">Certified</div>
+                  <div className="text-3xl font-bold text-white transform transition-all duration-300 group-hover:scale-105">ISO 9001</div>
+                  <div className="text-sm font-medium text-white opacity-90 transition-opacity duration-300 group-hover:opacity-100">Certified</div>
                 </div>
 
                 {/* Carousel Indicators - Positioned above ISO badge */}
-                <div className="absolute -top-16 right-6 flex gap-2">
+                <div className="absolute -top-16 right-6 flex gap-3">
                   {HERO_IMAGES.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
-                      className={`h-2 transition-all duration-300 ${
+                      className={`h-3 transition-all duration-300 cursor-pointer ${
                         index === currentImageIndex
-                          ? 'w-8 bg-white'
-                          : 'w-2 bg-white/50 hover:bg-white/75'
+                          ? 'w-12 bg-white'
+                          : 'w-3 bg-white/50 hover:bg-white/75 hover:w-6'
                       }`}
                       aria-label={`Go to image ${index + 1}`}
                     />

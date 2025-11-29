@@ -1,44 +1,30 @@
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import Link from 'next/link'
-import { Building2, Home, Wrench, PaintBucket, Hammer, HardHat } from 'lucide-react'
+import { Droplets, Construction } from 'lucide-react'
+import { Icon } from 'lucide-react'
+import { faucet } from '@lucide/lab'
+
+const Faucet = (props: any) => <Icon iconNode={faucet} {...props} />
 
 const services = [
   {
-    icon: Building2,
-    title: 'Commercial Construction',
+    icon: Faucet,
+    title: 'Sewerage Services',
     description:
-      'Full-service commercial building solutions for offices, retail spaces, and industrial facilities.',
+      'End-to-end design, build, and upgrade of Sewerage Treatment Plants (STP), Network Pumping Stations, and mechanized systems with Extended Aeration technology.',
   },
   {
-    icon: Home,
-    title: 'Residential Construction',
+    icon: Droplets,
+    title: 'Water Supply Services',
     description:
-      'Custom home building and residential development with attention to detail and quality craftsmanship.',
+      'Reservoir refurbishment, elevated water tank construction, distribution system improvements, and sludge treatment facility upgrades.',
   },
   {
-    icon: Wrench,
-    title: 'Renovation & Remodeling',
+    icon: Construction,
+    title: 'Infrastructure & Civil Works',
     description:
-      'Transform existing spaces with our expert renovation and remodeling services.',
-  },
-  {
-    icon: PaintBucket,
-    title: 'Interior Finishing',
-    description:
-      'Professional interior finishing services including drywall, painting, and trim work.',
-  },
-  {
-    icon: Hammer,
-    title: 'Project Management',
-    description:
-      'Comprehensive project management ensuring on-time delivery and budget adherence.',
-  },
-  {
-    icon: HardHat,
-    title: 'Design-Build',
-    description:
-      'Integrated design and construction services for a seamless building experience.',
+      'Comprehensive infrastructure construction for mixed developments and industrial parks, including earthworks, drainage systems, and associated civil engineering works.',
   },
 ]
 
@@ -53,8 +39,7 @@ export function Services() {
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-balance">Our Services</h2>
           <p className="mx-auto max-w-2xl text-balance text-lg text-gray-600">
-            Comprehensive construction services tailored to meet your unique
-            needs and exceed expectations.
+            Specialized water and sewerage solutions with over 25 years of expertise in design, construction, and infrastructure development.
           </p>
         </div>
 
