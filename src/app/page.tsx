@@ -1,6 +1,6 @@
-import { Hero } from '@/components/sections/Hero'
-import { Services } from '@/components/sections/Services'
-import { ClientLogos } from '@/components/sections/ClientLogos'
+import { Hero } from '@/components/mainpage/Hero'
+import { Services } from '@/components/mainpage/Services'
+import { ClientLogos } from '@/components/mainpage/ClientLogos'
 
 /**
  * Homepage - Main landing page
